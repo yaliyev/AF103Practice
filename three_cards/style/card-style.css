@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.cards{
+    width: fit-content;
+    margin: 30px auto;
+    
+}
+.card{
+    display: inline-block;
+    width: 20vw;
+    height: 60vh;
+    margin: 2px;
+}
+.card:hover{
+   transform: scale(1.02,1.02);
+   transition: 0.5s;
+}
+.image{
+    height: 40%;
+}
+.image>img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 12%;
+    border-top-right-radius: 12%;
+}
+
+.content{
+    height: 60%;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-bottom-left-radius: 8%;
+    border-bottom-right-radius: 8%;
+    overflow: hidden;
+}
+.title{
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5% 5%;
+    height: 10%;
+    overflow: hidden;
+}
+.text{
+    padding: 0 5%;
+    height: 80%;
+    overflow: hidden;
+   
+    font-size: 10px;
+}
