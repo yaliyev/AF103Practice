@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+header{
+    height: 10vh;
+
+}
+.logo-component{
+    position: relative;
+    left:15vw;
+    width: fit-content;
+    height: 8vh;
+    display: inline-block;
+}
+.logo-component>svg{
+   width: 3vw;
+   height: 3vh; 
+}
+.logo-component .logo-title{
+    
+    font-family: 'AR One Sans', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+.menu{
+    position: relative;
+    left: 18vw;
+    display: inline-block;
+    width: 40vw;
+  height: 5vh;
+}
+.menu-item{
+    display: inline-block;
+    padding: 2vh 1vw;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.header-end{
+    position: relative;
+    left: 30vw;
+    display: inline-block;
+    width: 40vw;
+  height: 5vh;
+}
+.header-end .buy{
+    width: 6vw;
+    padding: 1vh;
+    background-color: rgb(39, 230, 103);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: 1vw;
+}
+
