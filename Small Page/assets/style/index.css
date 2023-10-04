@@ -1,0 +1,185 @@
+body {
+    height: 100vh;
+    background: #009FFF;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ec2F4B, #009FFF);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+header {
+    height: 15vh;
+}
+
+.navbar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    width: 100px;
+    padding: 10px 25px;
+    background-color: rgb(231, 231, 117);
+    font-family: 'Lato', sans-serif;
+}
+
+.hero-common-info {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+}
+
+.hero-main-image {
+    width: 100%;
+    height: 45vh;
+}
+
+.hero-main-image>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-main-image-title {
+    box-sizing: content-box;
+    position: absolute;
+    left: 20vw;
+    top: 47vh;
+    width: 55vw;
+    max-width: 233px;
+    height: 4vh;
+    padding-top: 10px;
+    background-color: rgb(231, 231, 117);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.hero-main-image-description {
+    box-sizing: content-box;
+    position: absolute;
+    left: 20vw;
+    top: 53vh;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    background-color: rgb(231, 231, 117);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.hero-common-info .meal {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(223, 223, 71);
+    font-family: Lato;
+}
+
+.hero-common-info .meal>.meal-price {
+    height: 80%;
+    text-align: center;
+    padding-top: 1vh;
+    font-size: 2.5em;
+}
+
+.hero-common-info .meal>.meal-name {
+    height: 20%;
+    font-size: 0.85rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tablet-meals {
+    display: none;
+}
+
+.desktop-image-meals {
+    display: none;
+}
+
+.mobile-meals {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+@media only screen and (min-width:1024px) {
+    .tablet-meals {
+        display: none !important;
+    }
+    .mobile-meals {
+        display: none;
+    }
+    .desktop-image-meals{
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+    }
+    .hero-common-info>.hero-main-image{
+        display: none;
+    }
+    .hero-common-info .desktop-image-meals .hero-main-image{
+        width: 70%;
+    }
+    .hero-common-info .desktop-image-meals .meals{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+    }
+    .hero-common-info .desktop-image-meals .meals .meal{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hero-common-info .desktop-image-meals .meals .meal .meal-price{
+        height: fit-content;
+    }
+}
+
+@media only screen and (min-width:768px) {
+
+    .mobile-meals {
+        display: none;
+    }
+
+    .tablet-meals {
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+    }
+
+    .hero-common-info .meal {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    .hero-main-image-title {
+        font-size: 1.2rem;
+        padding-top: 10px;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .hero-main-image-title {
+        font-size: 1rem;
+        padding-top: 10px;
+    }
+
+    .hero-main-image>img {
+        object-fit: cover;
+        object-position: 40%;
+    }
+}
