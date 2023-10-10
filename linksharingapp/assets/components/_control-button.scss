@@ -1,0 +1,15 @@
+.control-button{
+    padding: 8px 30px;
+    background-color: #EFECFF;
+    color: #7461CA;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+}
+.control-button.active{
+    color: #7461CA;
+}
+.control-button:not(.active){
+    color: gray;
+}
