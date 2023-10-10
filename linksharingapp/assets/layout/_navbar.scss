@@ -26,9 +26,9 @@
         padding: 2vh 0;
     }
     .preview-button{
-        // i{
-        //     display: none;
-        // }
+        i{
+            display: none;
+        }
     }
 }
 .navigation-horizontal{
@@ -58,9 +58,9 @@
         }
     }
     .preview-button{
-        // i{
-        //     display: var(--fa-display,inline-block);
-        // }
+        i{
+            display: block !important;
+        }
         span{
             display: none;
         }

@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Link sharing app</title>
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
@@ -21,21 +23,88 @@
             <div class="tabs-control-buttons">
 
                 <button class="control-button active">
-                    <i class="fa-solid fa-link"></i>  <span>Links</span>  
+                    <i class="fa-solid fa-link"></i> <span>Links</span>
                 </button>
                 <button class="control-button">
                     <i class="fa-regular fa-user"></i>
-                     <span>Profile Details</span>
+                    <span>Profile Details</span>
                 </button>
 
 
             </div>
-           <button class="action-button preview-button">
-            <i class="fa-solid fa-eye" ></i>
-  <span class="text">Preview</span> 
-           </button>
+            <button class="action-button preview-button">
+                <i class="fa-solid fa-eye"></i>
+                <span class="text">Preview</span>
+            </button>
         </nav>
     </header>
+
+    <main>
+        <section class="customize-link">
+
+            <div class="row customize-link-row">
+
+                <div class="col-2 p-3">
+
+                    <img src="assets/images/phone.png" alt="">
+
+                </div>
+                <div class="col-7 p-3">
+
+                    <div class="page-heading">
+                         Customize your links
+                    </div>
+                    <div class="page-heading-subtext">
+                        Add/edit/remove links below and then share all your profiles with the world
+                    </div>
+
+                    <button class="action-button">
+                                    + Add new link
+                    </button>
+
+                    <div class="link-side">
+                        <div class="link-side-heading">
+                            <div class="link-side-heading-title">
+                                <i class="fa-solid fa-bars"></i> Link #1
+                            </div>
+                            <button class="remove-button">Remove</button>
+
+                        </div>
+                        <div class="link-input-group">
+                            <div class="link-input-title">Link</div>
+                            <div class="link-input-select-control">
+                                <div class="link-input-select-control-left">
+                                    <i class="fa-brands fa-github"></i>
+                                    Github
+                                </div>
+                                <div class="link-input-select-control-right">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="link-input-group">
+                            <div class="link-input-title">Link</div>
+                            <div class="link-input-select-control">
+                                <div class="link-input-select-control-left">
+                                    <i class="fa-brands fa-github"></i>
+                                    Github
+                                </div>
+                                <div class="link-input-select-control-right">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
 </body>
 
 </html>

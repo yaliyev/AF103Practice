@@ -28,6 +28,10 @@
   flex-wrap: nowrap;
   padding: 2vh 0;
 }
+.navigation .preview-button i {
+  display: none;
+}
+
 .navigation-horizontal {
   flex-direction: row;
   flex-wrap: nowrap;
@@ -44,10 +48,57 @@
   .tabs-control-buttons .control-button span {
     display: none;
   }
+  .preview-button i {
+    display: block !important;
+  }
   .preview-button span {
     display: none;
   }
 }
+.customize-link .customize-link-row {
+  display: flex;
+  justify-content: center;
+}
+.customize-link .customize-link-row .page-heading {
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.customize-link .customize-link-row .page-heading-subtext {
+  color: gray;
+}
+.customize-link .customize-link-row .action-button {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.customize-link .customize-link-row .link-side {
+  border-radius: 10px;
+}
+.customize-link .customize-link-row .link-side .link-side-heading {
+  display: flex;
+  justify-content: space-between;
+}
+.customize-link .customize-link-row .link-side .link-side-heading .link-side-heading-title {
+  color: gray;
+  font-weight: 600;
+}
+.customize-link .customize-link-row .link-side .link-side-heading .remove-button {
+  border: none;
+  background-color: inherit;
+  color: gray;
+}
+.customize-link .customize-link-row .link-side .link-input-group {
+  padding: 15px 0;
+}
+.customize-link .customize-link-row .link-side .link-input-group .link-input-select-control {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+
 .control-button {
   padding: 8px 30px;
   background-color: #EFECFF;

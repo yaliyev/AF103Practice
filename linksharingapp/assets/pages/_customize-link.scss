@@ -1,0 +1,48 @@
+.customize-link{
+    .customize-link-row{
+        display: flex;
+        justify-content: center;
+
+        .page-heading{
+            font-size: 40px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+        }
+        .page-heading-subtext{
+            color: gray;
+        }
+        .action-button{
+            width: 100%;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .link-side{
+            border-radius: 10px;
+
+            .link-side-heading{
+                display: flex;
+                justify-content: space-between;
+                .link-side-heading-title{
+                    color: gray;
+                    font-weight: 600;
+                }
+                .remove-button{
+                    border: none;
+                    background-color: inherit;
+                    color: gray;
+                }
+            }
+            .link-input-group{
+                padding: 15px 0;
+
+                .link-input-select-control{
+                    display: flex;
+                    justify-content: space-between;
+                    border: 1px solid gray;
+                    border-radius: 5px;
+                    padding: 10px 10px;
+                }
+            }
+        }
+    }
+}
