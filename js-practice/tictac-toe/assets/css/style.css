@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.tic-tac {
+    position: absolute;
+    width: 320px;
+    height: 200px;
+    left: calc(50% - 160px);
+    top: calc(50% - 100px);
+}
+
+
+
+
+.tic-tac  .bar{
+    width: 100%;
+    height: 68px;
+    background-color: #1f3540;
+    border-radius: 10px;
+}
+.score-content{
+    height: 50px;
+    border-radius: 10px;
+}
+.score-content>div{
+    color: black;
+    font-weight: 500;
+}
+.score-content.aqua{
+    background-color: #31C4BE;
+}
+.score-content.white{
+    background-color: #A8bec9;
+}
+.score-content.yellow{
+    background-color: #f2b237;
+}
