@@ -1,0 +1,54 @@
+.container{
+    width: calc(50%);
+    margin: auto;
+}
+.tabs-row{
+    display: flex;
+    width: fit-content;
+    margin: auto;
+}
+
+.tabs-row .tab{
+    background-color: gray;
+    padding: 25px 50px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.tabs-row .tab i{
+    color: white;
+}
+.tabs-row .tab.windows{
+    background-color: #0099E4;
+}
+.tabs-row .tab.ubuntu{
+    background-color: #E1500E;
+}
+.tabs-row .tab.redhat{
+    background-color: #FC1700;
+}
+.tabs-row .tab.apple{
+    background-color: gray;
+}
+.select-tab{
+    border-radius: 9px;
+    margin-top: 30px;
+    display: flex;
+    background-color: #FC1700;
+}
+.select-tab .content{
+    color: white;
+    padding: 10px;
+    padding-left: 20px;
+    width: 70%;
+    text-align: justify;
+    font-size: 20px;
+}
+.select-tab .logo{
+    padding-left: 30px;
+    width: 30%;
+}
+.select-tab .logo i{
+    color: white;
+}
