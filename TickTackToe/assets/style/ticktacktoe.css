@@ -1,0 +1,36 @@
+body{
+    background-color: #192A32;
+}
+.game-container{
+
+    width: calc(60% - calc(30%/6));
+    margin: 200px auto;
+    display: flex;
+    flex-direction: column;
+}
+.game-row{
+    padding-top: 10px;
+    padding-bottom: 10px; 
+   display: flex;
+   column-gap: 20px;
+   justify-content: center;
+}
+.div-game-box-element{
+    width: 120px;
+    height: 120px;
+    background-color: #1F3540;
+    box-shadow: 0px 7px 5px #0F202B;
+    border-radius: 10px;
+}
+.x-icon{
+    color: white;
+    margin-left: 30px;
+    margin-top: 15px;
+    color: #31C4BE;
+}
+.o-icon{
+    color: white;
+    margin-left:20px;
+    margin-top: 20px;
+    color: #EFB136;
+}

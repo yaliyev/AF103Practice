@@ -1,0 +1,82 @@
+body{
+    background: #2193b0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+height: 100vh;
+}
+
+.app-box{
+    margin-top: 100px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+.app-box .title{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.app-box .adding-task-input{
+    width: 80%;
+    height: 38px;
+    padding-left: 8px;
+    border: 1px solid rgb(216, 211, 211);
+    border-radius: 4px;
+}
+.app-box .adding-task-button{
+    padding: 5px 15px;
+    border-radius: 4px;
+    color: white;
+    background-color: #a53dea;
+    border: none;
+}
+.tasks{
+   margin-top: 20px;
+}
+.task{
+    width: 95%;
+    padding: 8px;
+    margin-top: 10px;
+    background-color: #EAE6E6;
+    position: relative;
+}
+.delete-task{
+    position: absolute;
+    right: -1%;
+    top: -4%;
+    background-color: rgb(236, 58, 64);
+    border-radius: 10px;
+    padding: 7px 15px;
+    border: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+}
+.delete-task.disabled{
+    display: none;
+}
+.delete-task i{
+    color: white
+}
+.tasks-info{
+    margin-top: 20px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.tasks-info .tasks-amount{
+    padding-top: 5px;
+}
+.tasks-info .clear-all-button{
+    background-color: #a53dea;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+#tasks-amount{
+    display: none;
+}
+#no-todo-item{
+    display: block;
+}
