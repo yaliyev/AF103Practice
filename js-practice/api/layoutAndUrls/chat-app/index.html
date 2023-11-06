@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Chat Uygulaması</title>
+</head>
+<body>
+    <div class="header">
+        <input type="text" id="username-input" placeholder="Kullanıcı Adı">
+    </div>
+    <div class="chat-container">
+        <div class="chat-messages" id="chat-messages">
+            <div class="message received">Message 1</div>
+            <div class="message sent">Message 2</div>
+        </div>
+        <div class="message-input">
+            <input type="text" id="message-input" placeholder="Mesajınızı yazın...">
+            <button onclick="sendMessage()">Gönder</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

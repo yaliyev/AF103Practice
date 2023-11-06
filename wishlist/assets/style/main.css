@@ -1,0 +1,11 @@
+.wishlist{
+    padding: 10px 150px;
+}
+.image-source-card{
+    position: relative;
+}
+.image-source-card .heart{
+    position: absolute;
+    right: 5px;
+    font-size: 50px;
+}

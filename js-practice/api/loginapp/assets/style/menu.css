@@ -1,0 +1,14 @@
+nav{
+    background-color: #6067D1;
+}
+.nav-menu{
+    display: flex;
+    list-style-type: none;
+    column-gap: 10px;
+}
+.nav-menu li>a{
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}

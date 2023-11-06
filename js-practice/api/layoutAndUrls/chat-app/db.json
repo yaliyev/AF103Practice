@@ -1,0 +1,43 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "sentMessages": [
+                {
+                    "sentToID": 2,
+                    "msgcontent": "Hello",
+                    "date": "Mon Oct 30 2023 08:53:51 GMT+0400 (Azerbaijan Standard Time)"
+                },
+                {
+                    "sentToID": 2,
+                    "msgcontent": "Fine and you",
+                    "date": "Mon Oct 30 2023 08:54:51 GMT+0400 (Azerbaijan Standard Time)"
+                }
+            ],
+            "receivedMessages": [
+                {
+                    "receivedFromID": 2,
+                    "msgcontent": "Hello,how are you",
+                    "date": "Mon Oct 30 2023 08:54:21 GMT+0400 (Azerbaijan Standard Time)"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "sentMessages": [
+                {
+                    "sentToID": 1,
+                    "msgcontent": "Hello,how are you",
+                    "date": "Mon Oct 30 2023 08:54:21 GMT+0400 (Azerbaijan Standard Time)"
+                }
+            ],
+            "receivedMessages": [
+                {
+                    "receivedFromID": 1,
+                    "msgcontent": "Hello",
+                    "date": "Mon Oct 30 2023 08:53:51 GMT+0400 (Azerbaijan Standard Time)"
+                }
+            ]
+        }
+    ]
+}
