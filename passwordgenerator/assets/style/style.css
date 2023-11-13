@@ -1,0 +1,39 @@
+body {
+    height: 100vh;
+    background: #0f0c29;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.generator-box{
+    padding: 20px;
+    background-color: #5044d9;
+    box-shadow: -2px -1px 20px rgb(255, 255, 0,0.6);
+}
+.password-input-box{
+    display: flex;
+    position: relative;
+}
+.copy-password-btn{
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    padding: 3px 8px;
+    border: none;
+    background-color: #24243e;
+}
+.copy-password-btn i{
+    color: white;
+}
+.generate-password-btn{
+    padding: 10px;
+    border: none;
+    background-color: #302b63;
+    color: white;
+}
+.generate-password-btn:hover{
+    font-weight: bold;
+}
