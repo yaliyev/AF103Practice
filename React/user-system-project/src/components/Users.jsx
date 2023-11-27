@@ -17,8 +17,10 @@ const Users = ({ user, setUser }) => {
 
     if (isFriend == undefined) {
 
-      currentUser.friends.push({ id: newFriendUser.id });
-      newFriendUser.friends.push({ id: currentUser.id });
+      newFriendUser.requests.push({id:currentUser.id});
+
+      // currentUser.friends.push({ id: newFriendUser.id });
+      // newFriendUser.friends.push({ id: currentUser.id });
     }
 
     let currentUserIndex = -1;
@@ -76,7 +78,7 @@ const Users = ({ user, setUser }) => {
   return (
     <>
 
-      {showFriendsPage ? <Friends user={user} users={users} friends={user.friends} setShowFriendsPage={setShowFriendsPage} /> : <>
+      {showFriendsPage ? <Friends user={user} users={users} setUsers={setUsers} friends={user.friends} setShowFriendsPage={setShowFriendsPage} /> : <>
 
         <CRow>
           <CCol sm={1}></CCol>
