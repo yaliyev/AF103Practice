@@ -1,11 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { CRow, CCol, CCard, CCardImage, CCardBody, CCardTitle, CCardText, CButton } from '@coreui/react'
 import { getUsers, editCurrentUserAndAddFriend } from '../api/users_request'
 import Friends from './Friends'
-const Users = ({ user, setUser }) => {
-  const [users, setUsers] = useState([])
-  const [showFriendsPage, setShowFriendsPage] = useState(false);
+import { UsersContext } from '../contexts'
 
+const Users = ({ user, setUser }) => {
+   const {users,setUsers} = useContext(UsersContext);
+  //const [users, setUsers] = useState([])
+  const [showFriendsPage, setShowFriendsPage] = useState(false);
+    console.log(users);
 
   function addToFriend(newFriendUser) {
     console.log(user);
